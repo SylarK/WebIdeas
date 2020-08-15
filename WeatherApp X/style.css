@@ -59,6 +59,10 @@ header input:focus {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
 
+.loc {
+    margin-right: 20px;
+}
+
 .loc .date {
     font-size: 16px;
 }
@@ -69,6 +73,26 @@ header input:focus {
     margin-bottom: 5px;
 }
 
+.weather-now .temperature{
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+}
 
+.weather-now .temperature span{
+    font-weight: 400;
+}
 
+.weather-now .weatherMain{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
 
+.weather-now .high-low{
+    font-size: 26px;
+    font-weight: 350;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.4);
+}
