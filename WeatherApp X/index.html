@@ -5,29 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 
 </head>
 <body>
     
-    <div class="container">
-
-        <div class="panel-out">
-
-            <div id="weather" class="result">
-                <p>Hello!</p>
+    <div class="myPanel">
+        <header>
+            <input type="text" class="search" placeholder="City" />
+        </header>
+        <main>
+            <section class="loc">
+                <div class="city">Iporá, GO</div>
+                <div class="date">Sunday 15 August 2020</div>
+            </section>
+            <div class="weather-now">
+                <div class="temperature">29<span>ºc</span></div>
+                <div class="weatherMain">Clear</div>
+                <div class="high-low">32º / 28º</div>
             </div>
-
-        </div>
-        <div class="panel-in">
-            <input type="text" id="city">
-            <button id="btn-weather">Search</button>
-        </div>
+        </main>
 
     </div>
-
 
     <script src="scripts.js"></script>
 </body>

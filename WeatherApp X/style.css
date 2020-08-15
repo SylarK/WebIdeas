@@ -1,61 +1,74 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body{
-    height: 100vh;
+
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/27/07/32/light-1282314_960_720.jpg');
+    background-size: cover;
+    background-position: top center;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Input*/
+
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 16px ;
+    border-bottom: 3px solid #003bdf31;
+    color: #313131;
+    font-size: 18px;
+    /*Transition para o background quando ativado o focus no input*/
+    transition: 0.5s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+/*  Camada - efeito no background */
+.myPanel{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
 
-.panel-out{
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.loc .date {
+    font-size: 16px;
 }
 
-.result{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 250px;
+.loc .city{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.result img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-} 
-
-.panel-in{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.marker{
-    border: 2px solid red;
 
 
-}
 
-#btn-weather{
-    background-color: darkgrey;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 18px;
-    width: 100px;
-    height: 35px;
-    margin: 3vh;
-    cursor: pointer;
-}
-
-#city{
-    height: 30px;
-    margin: 3vh;
-}
