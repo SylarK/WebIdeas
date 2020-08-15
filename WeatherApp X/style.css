@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-out{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 250px;
+}
+
+.result img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+} 
+
+.panel-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker{
+    border: 2px solid red;
+
+
+}
+
+#btn-weather{
+    background-color: darkgrey;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    width: 100px;
+    height: 35px;
+    margin: 3vh;
+    cursor: pointer;
+}
+
+#city{
+    height: 30px;
+    margin: 3vh;
+}
