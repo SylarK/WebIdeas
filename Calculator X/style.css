@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background: rgba(182, 201, 231, 0.74);
+}
+
+.panelCalculator{
+    position: absolute;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator{
+    background: rgba(145, 181, 214, 0.29);
+    min-width: 200px;
+}
+
+.viewer{
+    z-index: 2;
+    min-width: 180px;
+    margin: 1%;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 10px ;
+    font-size: 32px;
+    text-align: right;
+    background-color: rgba(196, 196, 196, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+.line-calculator{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 242px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+.line-calculator .num {
+    font-weight: 600;
+    font-size: 18px;
+    min-width: 42px;
+    min-height: 40px;
+    margin: 2px;
+    /*background:  rgba(198, 226, 253, 0.596);*/
+    background: rgba(145, 181, 214, 0.151);
+    opacity: 0.8;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.line-calculator .num:hover{
+    background: rgba(145, 181, 214, 0.589);
+}
+
+.line-calculator .clear{
+    font-weight: 600;
+    font-size: 18px;
+    background: rgba(145, 181, 214, 0.151);
+    opacity: 0.8;
+    border: none;
+    min-width: 86px;
+    min-height: 40px;
+    margin: 2px;
+    margin-right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.line-calculator .clear:hover{
+    background: rgba(145, 181, 214, 0.589);
+}

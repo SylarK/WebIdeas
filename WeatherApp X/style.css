@@ -41,7 +41,7 @@ header input{
     outline: none;
     background-color: rgba(255, 255, 255, 0.377);
     border-radius: 16px ;
-    border-bottom: 3px solid #003bdf31;
+    border-bottom: 3px solid #00092063;
     color: #313131;
     font-size: 18px;
     /*Transition para o background quando ativado o focus no input*/
@@ -97,3 +97,5 @@ header input:focus {
     font-weight: 350;
     text-shadow: 0 4px rgba(0, 0, 0, 0.4);
 }
+
+/* Amadodev */

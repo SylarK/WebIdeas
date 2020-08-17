@@ -91,6 +91,12 @@ function checkWeather(value){
 }
 */
 
+
+
+
+
+/*  Amadodev    */
+
     
 
 
