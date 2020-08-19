@@ -9,6 +9,15 @@ body {
     background: rgba(182, 201, 231, 0.74);
 }
 
+body h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -5% ;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
 .panelCalculator{
     position: absolute;
     width: 100%;
@@ -38,6 +47,7 @@ body {
 }
 
 .calculator .viewer{
+    min-height: 58px;
     z-index: 2;
     min-width: 180px;
     margin: 1%;
@@ -82,6 +92,10 @@ body {
 
 .line-calculator .num:hover{
     background: rgba(145, 181, 214, 0.589);
+}
+
+.line-calculator .num:active{
+    border: none;
 }
 
 .line-calculator .clear{
