@@ -1,46 +1,53 @@
-var viewer = document.querySelector('#viewer');
-var erase = document.querySelector('#erase');
-var divi = document.querySelector('#divi');
-var clear = document.querySelector('#clear');
-var times = document.querySelector('#times');
-var minus = document.querySelector('#minus');
-var plus = document.querySelector('#plus');
-var change = document.querySelector('#change');
-var equals = document.querySelector('#equals');
-
-var el = function(element) {
-    if(element.charAt(0) === "#"){
-        return document.querySelector(element);
-        console.log('get');
-    } else {
-        return document.querySelectorAll(element)
-        console.log('get');
+/*Classe Calculator*/
+class Calculator {
+    constructor(viewerP, viewerC){
+        this.viewerC = viewerC;
+        this.viewerP = viewerP;
+        this.clear();
     }
+
+
 }
 
-/*Display*/
-var display = el('#viewer')
-/*Equals*/
-var equals = el('#equals')
-/*Operators*/
-var ops = el('.ops')
-/*Numbers*/
-var num = el('.number')
-var current = '';
 
-/*Loop para os operators*/
-for (var i = 0;i < ops.length; i++){
-    ops[i].onclick = sayHello
-}
+/*Constantes*/
+const numberBtn = document.querySelectorAll('[data-num]');
+const operators = document.querySelectorAll('[data-ops]');
+const equalsBtn = document.querySelector('[data-equals]');
+const eraseBtn  = document.querySelector('[data-delete]');
+const clearBtn  = document.querySelector('[data-ac]');
+const viewerC   = document.querySelector('#viewer'); /*Atual*/
+const viewerP   = document.querySelector('#viewerPrev'); /*Anterior*/
 
-/*Loop para os números*/
-for (var i = 0; i<num.length; i++){
-    num[i].addEventListener('click', () => {
-        display.innerHTML = '---'
+//const calculator = new Calculator(viewerP, viewerC);
+
+/*Escutando todos os numberBtn*/
+numberBtn.forEach(button=>{
+    button.addEventListener('click', () => {
+        
     })
-}
+})
 
-function sayHello(){
-    alert('Hello.')
-}
+/*Escutando todos os operators*/
+operators.forEach(button=>{
+    button.addEventListener('click', () => {
+
+    })
+})
+
+/*Escutando Btn Equal*/
+equalsBtn.addEventListener('click', () => {
+
+})
+
+/*Escutando Btn Erase*/
+eraseBtn.addEventListener('click', () => {
+
+})
+
+/*Escutando Btn Clear*/
+clearBtn.addEventListener('click', () => {
+    
+})
+
 
