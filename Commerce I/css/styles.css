@@ -117,6 +117,8 @@ p{
 
 .col-3 img{
     width: 100%;
+    filter: grayscale(20%);
+}
 }
 
 .small-container{
